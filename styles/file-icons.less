@@ -1,0 +1,48 @@
+// SS icon
+.silverstripe-icon    {
+  background-size: 100%;
+  content: '';
+  display: inline-block;
+  height: 16px !important;
+  width: 16px;
+  top: 3px !important;
+  content: '' !important;
+}
+
+// SS icon variants
+.silverstripe-icon-normal {
+  background-image: url('atom://lg-silverstripe/resources/icons/silverstripe.png');
+}
+
+.silverstripe-icon-light {
+  background-image: url('atom://lg-silverstripe/resources/icons/silverstripe-light.png');
+}
+
+.silverstripe-icon-modified {
+  background-image: url('atom://lg-silverstripe/resources/icons/silverstripe-modified.png');
+}
+
+// Normal SS icon
+.icon-file-text[data-name$=".ss"]:before,
+.tab > .title[data-name$=".ss"]:before {
+    .silverstripe-icon;
+    .silverstripe-icon-normal;
+}
+
+.tab > .title[data-name$=".ss"]:before {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+// Active/selected SS icons
+.selected > .icon-file-text[data-name$=".ss"]:before,
+.active > .title[data-name$=".ss"]:before {
+    .silverstripe-icon;
+    .silverstripe-icon-light;
+}
+
+// Modified SS icon
+.status-modified > .icon-file-text[data-name$=".ss"]:before {
+    .silverstripe-icon;
+    .silverstripe-icon-modified;
+}
