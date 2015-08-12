@@ -1,6 +1,6 @@
 {
   "name": "lg-silverstripe",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "SilverStripe syntax highlighting, code snippets & icons.",
   "repository": {
     "type": "git",
