@@ -22,7 +22,7 @@
     'body': "{$SVG('${1}')}"
   'sscomment':
     'prefix': '-- '
-    'body': "<%-- --%>"
+    'body': "<%-- ${1} --%>"
 '.text.html.php':
   'Class Controller Skeleton':
     'prefix': 'skel'
